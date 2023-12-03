@@ -1,0 +1,140 @@
+
+body{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #d9eae4;
+}
+
+/* logo section */
+.logo_div {
+  display: flex;
+  align-items: center;
+  font-family: 'Josefin Slab', serif;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+nav{
+  z-index: 10001;
+  background-color: #333333;
+}
+
+
+.navbar {
+  padding: 10px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 1em;
+}
+
+nav ul li a{
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+}
+
+nav ul li a:hover{
+  
+  color: rgb(199, 171, 62);
+  transition: 1s;
+  
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links.visible {
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 100%;
+  background-color: #495E57;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.login_btn{
+  border: 1px solid #495E57;
+  color: #d9eae4;
+  border-radius: 10px;
+}
+.login_btn:hover{
+  border: -1px solid #495E57;
+  color: #d9eae4;
+  border-radius: 10px;
+}
+
+.signup_btn{
+  border: 1px solid #495E57;
+  color: #d9eae4;
+  border-radius: 10px;
+}
+.signup_btn:hover{
+  border: -1px solid #495E57;
+  color: #d9eae4;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px ) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.visible {
+    display: flex;
+    background: #333333;
+    z-index: 1000;
+    padding: 20px 0;
+  }
+
+  .navbar{
+    background:rgb(255, 254, 254);
+    padding: 10px 8%;
+  }
+
+  nav ul li a{
+    color: rgb(243, 241, 241);
+
+  }
+  
+
+  .bar{
+    background: #333333;
+  }
+
+}
